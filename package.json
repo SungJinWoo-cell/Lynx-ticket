@@ -1,0 +1,76 @@
+{
+  "name": "ticket-bot",
+  "version": "2.0.0",
+  "description": "A versatile Discord.js bot with modular command architecture",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "format": "prettier --write \"src/**/*.js\""
+  },
+  "imports": {
+    "#commands/*": "./src/commands/*.js",
+    "#modules/*": "./src/commands/*.js",
+    "#bot/*": "./src/bot/*.js",
+    "#engine/*": "./src/engine/*.js",
+    "#providers/*": "./src/providers/*.js",
+    "#storage/*": "./src/storage/*.js",
+    "#options/*": "./src/options/*.js",
+    "#listeners/*": "./src/listeners/*.js",
+    "#structures/classes/TicketUI": "./src/bot/Interface.js",
+    "#structures/classes/client": "./src/bot/Client.js",
+    "#structures/classes/Command": "./src/bot/Command.js",
+    "#structures/classes/context": "./src/bot/Context.js",
+    "#structures/classes/*": "./src/bot/*.js",
+    "#structures/handlers/*": "./src/engine/*.js",
+    "#structures/workers/*": "./src/providers/*.js",
+    "#structures/*": "./src/bot/*.js",
+    "#classes/classes/TicketUI": "./src/bot/Interface.js",
+    "#classes/TicketUI": "./src/bot/Interface.js",
+    "#classes/client": "./src/bot/Client.js",
+    "#classes/Command": "./src/bot/Command.js",
+    "#classes/context": "./src/bot/Context.js",
+    "#classes/*": "./src/bot/*.js",
+    "#app/*": "./src/bot/*.js",
+    "#database/Manager": "./src/storage/Database.js",
+    "#database/Schema": "./src/storage/Models.js",
+    "#database/*": "./src/storage/*.js",
+    "#db/Manager": "./src/storage/Database.js",
+    "#db/Schema": "./src/storage/Models.js",
+    "#db/*": "./src/storage/*.js",
+    "#config/config": "./src/options/env.js",
+    "#config/emoji": "./src/options/assets.js",
+    "#config/*": "./src/options/*.js",
+    "#utils/logger": "./src/providers/Logger.js",
+    "#utils/utils": "./src/providers/Helpers.js",
+    "#utils/permissionHandler": "./src/providers/Permissions.js",
+    "#utils/aiService": "./src/providers/AI.js",
+    "#utils/*": "./src/providers/*.js",
+    "#services/*": "./src/providers/*.js",
+    "#events/*": "./src/listeners/*.js",
+    "#handlers/*": "./src/engine/*.js",
+    "#loaders/*": "./src/engine/*.js"
+  },
+  "keywords": [
+    "discord",
+    "bot",
+    "discord.js"
+  ],
+  "author": "Titan X Development",
+  "license": "MIT",
+  "dependencies": {
+    "discord-html-transcripts": "^3.2.0",
+    "discord.js": "^14.25.1",
+    "dotenv": "^16.6.1",
+    "express": "^5.2.1",
+    "mongodb-memory-server": "^11.2.0",
+    "mongoose": "^9.0.2",
+    "prettier": "^3.7.4"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "devDependencies": {
+    "canvas": "^3.2.3"
+  }
+}
